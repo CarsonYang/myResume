@@ -1,0 +1,830 @@
+﻿html {
+    font-size: 125%;
+    background-color: #f5f5f5;
+}
+
+@media only screen and (min-width: 320px) {
+    html {
+        font-size: 125%!important;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    html {
+        font-size: 140.625%!important;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    html {
+        font-size: 156.25%!important;
+    }
+}
+
+@media only screen and (min-width: 480px){
+    html {
+        font-size: 187.5%!important;
+    }
+}
+
+@media only screen and (min-width: 560px){
+    html {
+        font-size: 218.75%!important;
+    }
+}
+
+@media only screen and (min-width: 640px){
+    html {
+        font-size: 250%!important;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    html {
+        font-size: 300%!important;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    html {
+        font-size: 400%!important;
+    }
+}
+
+@media only screen and (min-width: 1280px){
+    html {
+        font-size: 500%!important;
+    }
+}
+
+.page_0{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (min-width: 1366px){
+    html {
+        font-size: 533.59375%!important;
+    }
+}
+button, p, ul, ol, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.custom{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.arrow{
+    position: absolute;
+    bottom: 5%;
+    z-index: 10;
+    height: 2rem;
+    width: 100%;
+    background: url("../images/star/arrow.gif") no-repeat center;
+    background-size: auto 100%;
+}
+
+.music{
+    position: absolute;
+    z-index: 10;
+    top: 3rem;
+    right: 1.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.musicOn{
+    background: url("../images/star/on.png") no-repeat center;
+    background-size: 100% auto;
+    animation: musicOn 2s linear infinite;
+    -webkit-animation: musicOn 2s linear infinite;
+    -moz-animation: musicOn 2s linear infinite;
+}
+
+.musicOff{
+    background: url("../images/star/off.png") no-repeat center;
+    background-size: 100% auto;
+}
+
+@keyframes musicOn {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(30deg);
+    }
+    75% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@-webkit-keyframes musicOn {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(30deg);
+    }
+    75% {
+        -webkit-transform: rotate(-30deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@-moz-keyframes musicOn {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    25% {
+        -moz-transform: rotate(30deg);
+    }
+    75% {
+        -moz-transform: rotate(-30deg);
+    }
+    100% {
+        -moz-transform: rotate(0deg);
+    }
+}
+
+.logo{
+    position: absolute;
+    right: 5%;
+    top: 2%;
+    z-index: 2;
+    height: 1.2rem;
+}
+
+.star{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 10000px;
+    z-index: 1;
+    background: url("../images/star/1-1.jpg") repeat-x top left;
+    background-size: auto 100%;
+}
+
+.post{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 10000px;
+    z-index: 1;
+    background: url("../images/star_myDesign/post_new.jpg") repeat-x top left;
+    background-size: auto 100%;
+}
+
+.moveLeft{
+    animation: moveLeft 300s linear forwards;
+    -webkit-animation: moveLeft 300s linear forwards;
+    -moz-animation: moveLeft 300s linear forwards;
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+    }
+    100% {
+        transform: translate3d(-9000px,0,0);
+        -webkit-transform: translate3d(-9000px,0,0);
+        -moz-transform: translate3d(-9000px,0,0);
+    }
+}
+
+@-webkit-keyframes moveLeft {
+    0% {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+    }
+    100% {
+        transform: translate3d(-9000px,0,0);
+        -webkit-transform: translate3d(-9000px,0,0);
+        -moz-transform: translate3d(-9000px,0,0);
+    }
+}
+@-moz-keyframes moveLeft {
+    0% {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+    }
+    100% {
+        transform: translate3d(-9000px,0,0);
+        -webkit-transform: translate3d(-9000px,0,0);
+        -moz-transform: translate3d(-9000px,0,0);
+    }
+}
+
+.moveRight{
+    animation: moveRight 300s linear forwards;
+    -webkit-animation: moveRight 300s linear forwards;
+    -moz-animation: moveRight 300s linear forwards;
+}
+@keyframes moveRight {
+    0% {
+        transform: translate3d(-8000px,0,0);
+        -webkit-transform: translate3d(-8000px,0,0);
+        -moz-transform: translate3d(-8000px,0,0);
+    }
+    100% {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+    }
+}
+@-webkit-keyframes moveRight {
+    0% {
+        transform: translate3d(-8000px,0,0);
+        -webkit-transform: translate3d(-8000px,0,0);
+        -moz-transform: translate3d(-8000px,0,0);
+    }
+    100% {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+    }
+}
+@-moz-keyframes moveRight {
+    0% {
+        transform: translate3d(-8000px,0,0);
+        -webkit-transform: translate3d(-8000px,0,0);
+        -moz-transform: translate3d(-8000px,0,0);
+    }
+    100% {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+    }
+}
+.custom-title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background: url("../images/star/1-2.png") no-repeat center 37%;
+    background-size: 60% auto;
+
+}
+.custom-myName{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background: url("../images/star_myDesign/1-2_new.png") no-repeat center 37%;
+    background-size: 60% auto;
+
+}
+.hideToShow{
+    animation: hideToShow 5s linear forwards;
+    -webkit-animation: hideToShow 5s linear forwards;
+    -moz-animation: hideToShow 5s linear forwards;
+}
+
+@keyframes hideToShow {
+    0% , 20% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-webkit-keyframes hideToShow {
+    0% , 20% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-moz-keyframes hideToShow {
+    0% , 20% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.floor-far{
+    position: absolute;
+    bottom: 0;
+    height: 40%;
+    width: 10000px;
+    background: url("../images/star/1-3.png") repeat-x top left;
+    background-size: auto 100%;
+    z-index: 3;
+}
+
+.floor-middle{
+    position: absolute;
+    bottom: 0;
+    height: 30%;
+    width: 10000px;
+    background: url("../images/star/1-4.png") repeat-x top left;
+    background-size: auto 100%;
+    z-index: 4;
+}
+
+.floor-near{
+    position: absolute;
+    bottom: 0;
+    height: 15%;
+    width: 10000px;
+    background: url("../images/star/1-5.png") repeat-x top left;
+    background-size: auto 100%;
+    z-index: 5;
+}
+
+/*业务合作*/
+.business{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding-top: 4rem;
+    background: url("../images/star_myDesign/contactMe.png") no-repeat center 4rem;
+    background-size: 50% auto;
+}
+
+.business img{
+    z-index: 3;
+    padding: 6rem 25% 1rem;
+}
+
+
+
+.business span{
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #FFFFFF;
+    letter-spacing: 0.3rem;
+
+}
+
+/*场景革命  page4*/
+.revolution{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.revolution .title{
+    width: 50%;
+    height: auto;
+}
+
+.revolute{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 0.5rem;
+}
+
+.revolute li{
+    position: absolute;
+    font-size: 0.8rem;
+    line-height: 1rem;
+}
+
+.revolution-first{
+    top: 0.5rem;
+    left: 5rem;
+    width: 6rem;
+    height: 6rem;
+    z-index: 2;
+}
+.revolution-second{
+    top: 3rem;
+    left: 10.3rem;
+    width: 5.5rem;
+    height: 5.5rem;
+    z-index: 1;
+    color: #FFFFFF;
+}
+.revolution-third{
+    top: 5.8rem;
+    left: 7rem;
+    width: 5rem;
+    height: 5rem;
+    z-index: 3;
+}
+
+.revolution-fourth{
+    top: 8rem;
+    left: 10.5rem;
+    width: 6rem;
+    height: 6rem;
+    z-index: 1;
+}
+
+.revolution-fifth{
+    top: 10.3rem;
+    left: 5.6rem;
+    width: 6rem;
+    height: 6rem;
+    z-index: 1;
+    color: #FFFFFF;
+}
+
+.revolution-sixth{
+    top: 13.4rem;
+    left: 10.5rem;
+    width: 5rem;
+    height: 5rem;
+    z-index: 1;
+}
+.revolute li > img{
+    width: 100%;
+    height: 100%;
+}
+
+.revolute li > span{
+    position: absolute;
+    display: block;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    text-align: center;
+    margin-top: -1rem;
+}
+
+.revolute .revolution-fourth >span{
+    margin-top: -0.5rem;
+}
+
+.rotate-right{
+    animation: rotate-right 3s linear infinite;
+    -webkit-animation: rotate-right 3s linear infinite;
+    -moz-animation: rotate-right 3s linear infinite;
+}
+
+@keyframes rotate-right {
+    0% {
+        transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);	/* Safari 和 Chrome */
+        -moz-transform: rotateZ(0deg);	/* Firefox */
+    }
+    100% {
+        transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);	/* Safari 和 Chrome */
+        -moz-transform: rotateZ(360deg);	/* Firefox */
+    }
+}
+
+@-webkit-keyframes rotate-right {
+    0% {
+        transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);	/* Safari 和 Chrome */
+        -moz-transform: rotateZ(0deg);	/* Firefox */
+    }
+    100% {
+        transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);	/* Safari 和 Chrome */
+        -moz-transform: rotateZ(360deg);	/* Firefox */
+    }
+}
+
+@-moz-keyframes rotate-right {
+    0% {
+        transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);	/* Safari 和 Chrome */
+        -moz-transform: rotateZ(0deg);	/* Firefox */
+    }
+    100% {
+        transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);	/* Safari 和 Chrome */
+        -moz-transform: rotateZ(360deg);	/* Firefox */
+    }
+}
+
+.rotate-left{
+    animation: rotate-left 3s linear infinite;
+    -webkit-animation: rotate-left 3s linear infinite;
+    -moz-animation: rotate-left 3s linear infinite;
+}
+@keyframes rotate-left {
+    0% {
+        transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);	/* Safari 和 Chrome */
+        -moz-transform: rotateZ(360deg);	/* Firefox */
+    }
+    100% {
+        transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);	/* Safari 和 Chrome */
+        -moz-transform: rotateZ(0deg);	/* Firefox */
+    }
+}
+
+@-webkit-keyframes rotate-left {
+    0% {
+        transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);	/* Safari 和 Chrome */
+        -moz-transform: rotateZ(360deg);	/* Firefox */
+    }
+    100% {
+        transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);	/* Safari 和 Chrome */
+        -moz-transform: rotateZ(0deg);	/* Firefox */
+    }
+}
+
+@-moz-keyframes rotate-left {
+    0% {
+        transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);	/* Safari 和 Chrome */
+        -moz-transform: rotateZ(360deg);	/* Firefox */
+    }
+    100% {
+        transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);	/* Safari 和 Chrome */
+        -moz-transform: rotateZ(0deg);	/* Firefox */
+    }
+}
+
+/*关于我们*/
+.about-title{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: url("../images/star/hill.png") no-repeat bottom center;
+    background-size: 100% 100%;
+}
+
+.about-pic{
+    width: 70%;
+    margin: 4rem 10%;
+}
+
+.light-run{
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+    height: 100%;
+}
+.light-run-left{
+    left: 0;
+}
+
+.light-run-right{
+    right: 0;
+}
+
+.light1{
+    background: url("../images/star/guang1.png") no-repeat left bottom;
+    background-size: auto 100%;
+    animation: light 1s 1s linear forwards;
+    -webkit-animation: light 1s 1s linear forwards;
+    -moz-animation: light 1s 1s linear forwards;
+}
+
+.light2{
+    background: url("../images/star/guang2.png") no-repeat left bottom;
+    background-size: auto 100%;
+    animation: light 1s 1.5s linear forwards;
+    -webkit-animation: light 1s 1.5s linear forwards;
+    -moz-animation: light 1s 1.5s linear forwards;
+}
+
+.light3{
+    background: url("../images/star/guang3.png") no-repeat right bottom;
+    background-size: auto 100%;
+    animation: light 1s 2s linear forwards;
+    -webkit-animation: light 1s 2s linear forwards;
+    -moz-animation: light 1s 2s linear forwards;
+}
+
+.light4{
+    background: url("../images/star/guang4.png") no-repeat left bottom;
+    background-size: auto 100%;
+    animation: light 1s 3s linear forwards;
+    -webkit-animation: light 1s 3s linear forwards;
+    -moz-animation: light 1s 3s linear forwards;
+}
+
+.light5{
+    background: url("../images/star/guang5.png") no-repeat right bottom;
+    background-size: auto 100%;
+    animation: light 1s 4s linear forwards;
+    -webkit-animation: light 1s 4s linear forwards;
+    -moz-animation: light 1s 4s linear forwards;
+}
+
+@keyframes light {
+    0% {width: 0;}
+    100% {width: 100%;}
+}
+
+@-webkit-keyframes light {
+    0% {width: 0;}
+    100% {width: 100%;}
+}
+@-moz-keyframes light {
+    0% {width: 0;}
+    100% {width: 100%;}
+}
+
+.light1 .introduction{
+    position: absolute;
+    bottom: 2.5rem;
+    left: 2.2rem;
+    width: 3rem;
+    height: 3rem;
+    background: url("../images/star_myDesign/2-3_new_3.png") no-repeat center;
+    background-size: auto 60%;
+    animation: hideToShow 0.5s 1.5s linear forwards;
+    -webkit-animation: hideToShow 0.5s 1.5s linear forwards;
+    -moz-animation: hideToShow 0.5s 1.5s linear forwards;
+}
+
+.light2 .introduction{
+    position: absolute;
+    bottom: 4rem;
+    left: 11rem;
+    width: 5rem;
+    height: 3rem;
+    background: url("../images/star_myDesign/2-5_new.png") no-repeat center;
+    background-size: auto 60%;
+    animation: hideToShow 0.5s 2s linear forwards;
+    -webkit-animation: hideToShow 0.5s 2s linear forwards;
+    -moz-animation: hideToShow 0.5s 2s linear forwards;
+}
+.light3 .introduction{
+    position: absolute;
+    bottom: 9.5rem;
+    left: 0;
+    width: 5rem;
+    height: 3rem;
+    background: url("../images/star_myDesign/2-7_new.png") no-repeat center;
+    background-size: auto 60%;
+    animation: hideToShow 0.5s 3s linear forwards;
+    -webkit-animation: hideToShow 0.5s 3s linear forwards;
+    -moz-animation: hideToShow 0.5s 3s linear forwards;
+}
+.light4 .introduction{
+    position: absolute;
+    bottom: 10rem;
+    right: 0;
+    width: 5rem;
+    height: 4.5rem;
+    background: url("../images/star_myDesign/2-9_new.png") no-repeat center;
+    background-size: auto 60%;
+    animation: hideToShow 0.5s 4s linear forwards;
+    -webkit-animation: hideToShow 0.5s 4s linear forwards;
+    -moz-animation: hideToShow 0.5s 4s linear forwards;
+}
+
+.light5 .introduction{
+    position: absolute;
+    bottom: 17rem;
+    right: 7.5rem;
+    width: 5rem;
+    height: 4.5rem;
+    background: url("../images/star/2-11.png") no-repeat center;
+    background-size: auto 60%;
+    animation: hideToShow 0.5s 4.5s linear forwards;
+    -webkit-animation: hideToShow 0.5s 4.5s linear forwards;
+    -moz-animation: hideToShow 0.5s 4.5s linear forwards;
+}
+
+.light-run .introduction{
+    opacity: 0;
+}
+
+/*全筑股份 page3*/
+
+.stake{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: url("../images/star/3-3.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.stake-qz{
+    margin-top: 4rem;
+    margin-left: 10%;
+    width: 60%;
+}
+
+.araneid{
+    position: absolute;
+    z-index: 4;
+    bottom: 100%;
+    width: 100%;
+    height: 100%;
+    background: url("../images/star/3-5.png") no-repeat center center;
+    background-size: 100%;
+}
+
+.araneid-net{
+    position: absolute;
+    z-index: 3;
+    right: 15%;
+    bottom: 25%;
+    width: 0;
+    height: 0;
+    background: url("../images/star/3-4.png") no-repeat center center;
+    background-size: 100%;
+}
+
+.araneid-down{
+    animation: araneid-down 2s 1s linear forwards;
+    -webkit-animation: araneid-down 2s 1s linear forwards;
+    -moz-animation: araneid-down 2s 1s linear forwards;
+}
+
+@keyframes araneid-down {
+    0% {bottom: 100%;}
+    100% {bottom: 0}
+}
+@-webkit-keyframes araneid-down {
+    0% {bottom: 100%;}
+    100% {bottom: 0}
+}
+@-moz-keyframes araneid-down {
+    0% {bottom: 100%;}
+    100% {bottom: 0}
+}
+
+.araneid-arround{
+    animation: araneid-arround 2s 3s linear forwards;
+    -webkit-animation: araneid-arround 2s 3s linear forwards;
+    -moz-animation: araneid-arround 2s 3s linear forwards;
+}
+
+@keyframes araneid-arround {
+    0% {width: 0;height: 0;right: 15%;bottom: 25%;}
+    100% {width: 100%;height: 100%;right: 0;bottom: 0;}
+}
+@-webkit-keyframes araneid-arround {
+    0% {width: 0;height: 0;right: 15%;bottom: 25%;}
+    100% {width: 100%;height: 100%;right: 0;bottom: 0;}
+}
+@-moz-keyframes araneid-arround {
+    0% {width: 0;height: 0;right: 15%;bottom: 25%;}
+    100% {width: 100%;height: 100%;right: 0;bottom: 0;}
+}
+
+.page12-first{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/star/12-1.png") no-repeat center;
+    background-size: auto 100%;
+}
+
+.page12-second{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/star/12-2.png") no-repeat center;
+    background-size: auto 100%;
+}
+
+.page12-third{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/star/12-3.png") no-repeat center;
+    background-size: auto 100%;
+}
+
+.bounceIn{
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+
+
+
+
+

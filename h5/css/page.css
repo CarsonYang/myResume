@@ -1,0 +1,88 @@
+.page        {
+    bottom:0;
+    position:absolute;
+    top:0;
+    width:100%;
+}
+.mask {
+    bottom:0;
+    position:absolute;
+    top:0;
+    width:100%;
+    background-color: rgba(0,0,0,1);
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 50%;
+    font-size: 6rem;
+    z-index: 10000;
+}
+/*default*/
+@keyframes rotateFall {
+    0%         { transform: rotateZ(0deg); }
+    20%     { transform: rotateZ(10deg); animation-timing-function: ease-out; }
+    40%     { transform: rotateZ(17deg); }
+    60%     { transform: rotateZ(16deg); }
+    100%     { transform: translateY(100%) rotateZ(17deg); }
+}
+@-webkit-keyframes rotateFall {
+    0%         { -webkit-transform: rotateZ(0deg); }
+    20%     { -webkit-transform: rotateZ(10deg); -webkit-animation-timing-function: ease-out; }
+    40%     { -webkit-transform: rotateZ(17deg); }
+    60%     { -webkit-transform: rotateZ(16deg); }
+    100%     { -webkit-transform: translateY(100%) rotateZ(17deg); }
+}
+@keyframes slideOutLeft {
+    to         { transform: translateX(-100%); }
+}
+@keyframes rotateOutNewspaper {
+    to         { transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
+}
+@keyframes scaleUp {
+    from     { opacity: 0.3; -webkit-transform: scale(0.8); }
+}
+@-webkit-keyframes scaleUp {
+    from     { -webkit-opacity: 0.3; -webkit-transform: scale(0.8); }
+}
+@keyframes slideInRight {
+    from     { transform:translateX(100%); }
+    to         { transform: translateX(0); }
+}
+@keyframes slideInUp {
+    from     { transform:translateY(100%); }
+    to         { transform: translateY(0); }
+}
+
+/*page*/
+@keyframes slideOutUp {
+    to         { transform: translateY(-100%); }
+}
+@keyframes slideOutDown {
+    to         { transform: translateY(100%); }
+}
+
+/*.ng-enter {
+    animation: scaleUp 0.5s both ease-in;
+    -webkit-animation: scaleUp 0.5s both ease-in;
+    z-index: 8888;
+}*/
+/*.ng-leave {
+    animation: rotateFall 0.5s both ease-in;
+    -webkit-animation: rotateFall 0.5s both ease-in;
+    z-index: 9999;
+}*/
+
+.up.ng-leave {
+    -webkit-animation: fadeOutUpBig 2s;
+    -moz-animation: fadeOutUpBig 2s;
+    -ms-animation: fadeOutUpBig 2s;
+    animation: fadeOutUpBig 2s;
+    z-index: 9999;
+}
+.down.ng-leave {
+    -webkit-animation: fadeOutDownBig 2s;
+    -moz-animation: fadeOutDownBig 2s;
+    -ms-animation: fadeOutDownBig 2s;
+    animation: fadeOutDownBig 2s;
+    z-index: 9999;
+}
+

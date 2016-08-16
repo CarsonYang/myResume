@@ -1,0 +1,51 @@
+<?php
+DEFINE('COREROOTPATH', "D:/wamp/www/gdweb");
+require(COREROOTPATH."/core/ext/wx/jssdk.php");
+$jssdk = new JSSDK("wx7debe5f84df770e4", "0b74623676de35aae0b4b67cc08abee2");
+$signPackage = $jssdk->GetSignPackage();
+//die(var_dump($signPackage));
+?>
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/public/bootstrap.css">
+    <link rel="stylesheet" href="css/public/animate.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link href="css/page1.css" rel="stylesheet" type="text/css">
+    <link href="css/page5.css" rel="stylesheet" type="text/css">
+    <link href="css/custom_index.css" rel="stylesheet" type="text/css">
+    <link href="css/decorate.css" rel="stylesheet" type="text/css">
+    <link href="css/cover.css" rel="stylesheet" type="text/css">
+	<script>
+    window.sessionStorage.wxConfig_appId = '<? echo $signPackage['appId']; ?>';
+    window.sessionStorage.wxConfig_nonceStr = '<? echo $signPackage['nonceStr']; ?>';
+    window.sessionStorage.wxConfig_signature = '<? echo $signPackage['signature']; ?>';
+    window.sessionStorage.wxConfig_timestamp = <? echo $signPackage['timestamp']; ?>;
+</script>
+    <title>俊俊的简历</title>
+</head>
+<body ng-app="app">
+<div page class="page {{ pageClass }}" ng-view></div>
+<div class="arrow"></div>
+<audio src="music/music.mp3" autoplay="autoplay" ></audio>
+<div class="music musicOn" type="on"></div>
+<div class="mask">0%</div>
+</body>
+</html>
+
+<script src="js/lib/esl/esl.js"></script>
+<script src="js/lib/esl/config.js"></script>
+<!--<script src="js/index.js"></script>-->
+<script>require(['http://maggiedodo.sinaapp.com/h5/js/index']);</script>
+<script>require(['wxShareSet'], function(data){
+        //默认分享
+        var obj = {
+            title: '俊俊的简历',
+            desc: '硕士，前端工程师，英语好',
+			link: window.location.protocol + '//' + window.location.host + '/index.htm',
+            imgUrl: window.location.protocol + '//' + window.location.host + '/images/star_myDesign/post.jpg'
+        };
+        data.def(obj);
+    })
+</script>

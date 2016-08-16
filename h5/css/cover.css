@@ -1,0 +1,283 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+.cover-background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url("../images/cover/background.jpg") no-repeat center;
+	background-size: 100%;
+}
+.cover-content .cover-logo {
+	position: absolute;
+	width: 3.2rem;
+	height: 0.8rem;
+	top: 0.6rem;
+	right: 0.375rem;
+	z-index: 0;
+}
+.cover-content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(44,46,50,0.5);
+}
+
+.cover-content .cover-phone{
+	position: absolute;
+	width: 25%;
+	top: 50%;
+	margin-top: -5rem;
+	left: 50%;
+	margin-left: -12.5%;
+	z-index: 1;
+}
+.cover-phone {
+	animation: hideToshow 3s linear forwards;
+	-webkit-animation: hideToshow 3s linear forwards;
+	-moz-animation: hideToshow 3s linear forwards;
+}
+@keyframes hideToshow {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+
+}
+@-webkit-keyframes hideToshow {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@-moz-keyframes hideToshow {
+	0% {opacity: 0;}
+	100% {opacity: 1}
+}
+
+.cover-content .cover-left-content {
+	position: absolute;
+	width: 35%;
+	height: 10rem;
+	top: 50%;
+	margin-top: -7rem;
+	left: 0;
+	z-index: 2;
+	opacity: 0;
+}
+.cover-left-content {
+	background: url("../images/cover/left-content.png") no-repeat right;
+	background-size: 90% auto;
+	animation: moveToLeft 1s 1s linear forwards;
+	-webkit-animation: moveToLeft 1s 1s linear forwards;
+	-moz-animation: moveToLeft 1s 1s linear forwards;
+}
+@keyframes moveToLeft {
+	0%{
+
+	}
+	100%{
+		left: 5%;
+		opacity: 1;
+	}
+}
+@-webkit-keyframes moveToLeft {
+	0%{
+
+	}
+	100%{
+		left: 5%;
+		opacity: 1;
+	}
+}
+@-moz-keyframes moveToLeft {
+	0%{
+
+	}
+	100%{
+		left: 5%;
+		opacity: 1;
+	}
+}
+.cover-content .cover-right-content {
+	position: absolute;
+	width: 35%;
+	height: 10rem;
+	top: 50%;
+	margin-top: -7rem;
+	right: 0;
+	z-index: 2;
+	opacity: 0;
+}
+
+.cover-right-content {
+	background: url("../images/cover/right-content.png") no-repeat left;
+	background-size: 90% auto;
+	animation: moveToRight 1s 2s linear forwards;
+	-webkit-animation: moveToRight 1s 2s linear forwards;
+	-moz-animation: moveToRight 1s 2s linear forwards;
+}
+@keyframes moveToRight {
+	0% {
+		
+	}
+	100% {
+		right: 5%;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes moveToRight {
+	0% {
+		
+	}
+	100% {
+		right: 5%;
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes moveToRight {
+	0% {
+		
+	}
+	100% {
+		right: 5%;
+		opacity: 1;
+	}
+}
+
+
+.cover-content .cover-center-content {
+	position: absolute;
+	width: 35%;
+	height: 3rem;
+	top: 50%;
+	margin-top: -8rem;
+	left: 0;
+	z-index: 2;
+	opacity: 0;	
+}
+.cover-center-content {
+	background: url("../images/cover/center-content.png") no-repeat right;
+	background-size: auto 100%;
+	animation: moveToLeft2 1s 3s linear forwards;
+	-webkit-animation: moveToLeft2 1s 3s linear forwards;
+	-moz-animation: moveToLeft2 1s 3s linear forwards;
+}
+@keyframes moveToLeft2 {
+	0%{
+
+	}
+	100%{
+		left: 15%;
+		opacity: 1;
+	}
+}
+@-webkit-keyframes moveToLeft2 {
+	0%{
+
+	}
+	100%{
+		left: 15%;
+		opacity: 1;
+	}
+}
+@-moz-keyframes moveToLeft2 {
+	0%{
+
+	}
+	100%{
+		left: 15%;
+		opacity: 1;
+	}
+}
+.cover-bottom-content {
+	position: absolute;
+	width: 80%;
+	height: 5rem;
+	margin: 0 10%;
+	z-index: 2;
+	opacity: 0;
+	background: url("../images/cover/cover-bottom-content.png") no-repeat bottom;
+	background-size: auto 100%;
+	animation: moveTop 1s 4s linear forwards;
+	-webkit-animation: moveTop 1s 4s linear forwards;
+	-moz-animation: moveTop 1s 4s linear forwards;
+}
+@keyframes moveTop {
+	0%{
+		bottom: 0;
+	}
+	50%{
+		opacity: 0.5;
+	}
+	100%{
+		bottom: 15%;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes moveTop {
+	0%{
+		bottom: 0;
+	}
+	50%{
+		opacity: 0.5;
+	}
+	100%{
+		bottom: 15%;
+		opacity: 1;
+	}
+}
+@-moz-keyframes moveTop {
+	0%{
+		bottom: 0;
+	}
+	50%{
+		opacity: 0.5;
+	}
+	100%{
+		bottom: 15%;
+		opacity: 1;
+	}
+}
+
+.cover-open {
+	position: absolute;
+	width: 1.5rem;
+	height: 2rem;
+	top: 50%;
+	margin-top: -1rem;
+	left: 50%;
+	margin-left: -0.75rem;
+	z-index: 10;
+	opacity: 0;
+	animation: hideToshow 3s 6s linear forwards;
+	-webkit-animation: hideToshow 3s 6s linear forwards;
+	-moz-animation: hideToshow 3s 6s linear forwards;
+}
+@keyframes flicker {
+	0%{
+		
+	}
+	
+	100%{
+		opacity: 1;
+	}
+}
+@-webkit-keyframes flicker {
+	0%{
+		
+	}
+	
+	100%{
+		opacity: 1;
+	}
+}
+@-moz-keyframes flicker {
+	0%{
+		
+	}
+	
+	100%{
+		opacity: 1;
+	}
+}

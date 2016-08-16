@@ -1,0 +1,262 @@
+﻿
+.page_0{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (min-width: 1366px){
+    html {
+        font-size: 533.59375%!important;
+    }
+}
+button, p, ul, ol, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.custom{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.logo{
+    position: absolute;
+    right: 5%;
+    top: 2%;
+    z-index: 2;
+    height: 1.2rem;
+}
+
+.star{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: url("../images/star/1-1.jpg") repeat-x top left;
+    background-size: auto 100%;
+}
+.star1{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: url("../images/star/1-1.jpg") repeat-x top left;
+    background-size: auto 100%;
+}
+
+.picLeft{
+    animation: picLeft 3000s linear forwards;
+    -webkit-animation: picLeft 3000s linear forwards;
+    -moz-animation: picLeft 3000s linear forwards;
+}
+
+.picRight{
+    animation: picRight 30s linear forwards;
+    -webkit-animation: picRight 30s linear forwards;
+    -moz-animation: picRight 30s linear forwards;
+}
+
+@keyframes picLeft {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-100%);}
+}
+@-webkit-keyframes picLeft {
+    0% {-webkit-transform: translateX(0);}
+    100% {-webkit-transform: translateX(-100%);}
+}
+
+@keyframes picRight {
+    0% {background-position: 100%;}
+    100% {background-position: 0;}
+}
+@-webkit-keyframes picRight {
+    0% {background-position: 100%;}
+    100% {background-position: 0;}
+}
+@-moz-keyframes picRight {
+    0% {background-position: 100%;}
+    100% {background-position: 0;}
+}
+
+.custom-title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background: url("../images/star/1-2.png") no-repeat center;
+    background-size: 60% auto;
+
+}
+.hideToShow{
+    animation: hideToShow 4s linear forwards;
+    -webkit-animation: hideToShow 4s linear forwards;
+    -moz-animation: hideToShow 4s linear forwards;
+}
+
+@keyframes hideToShow {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-webkit-keyframes hideToShow {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-moz-keyframes hideToShow {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.floor-far{
+    position: absolute;
+    bottom: 0;
+    height: 40%;
+    width: 10000%;
+    background: url("../images/star/1-3.png") repeat-x top left;
+    background-size: auto 100%;
+    z-index: 3;
+}
+
+.floor-middle{
+    position: absolute;
+    bottom: 0;
+    height: 30%;
+    width: 100%;
+    background: url("../images/star/1-4.png") repeat-x top left;
+    background-size: auto 100%;
+    z-index: 4;
+}
+
+.floor-near{
+    position: absolute;
+    bottom: 0;
+    height: 15%;
+    width: 100%;
+    background: url("../images/star/1-5.png") repeat-x top left;
+    background-size: auto 100%;
+    z-index: 5;
+}
+
+/*业务合作*/
+.business{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.business > span{
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #FFFFFF;
+    font-weight: 900;
+}
+
+.code{
+    width: 7.25rem;
+    margin: 1rem auto;
+    height: 9.25rem;
+}
+
+.code div{
+    height: 7.25rem;
+    width: 100%;
+    background: #FFFFFF;
+}
+.code div img{
+    width: 100%;
+    height: 100%;
+}
+
+.code span{
+    line-height: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+.contact{
+    color: #FFFFFF;
+    line-height: 2rem;
+    margin-top: 3rem;
+    font-size: 1rem;
+}
+
+/*场景革命  page4*/
+.revolution{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.revolution .title{
+    width: 60%;
+    height: auto;
+}
+
+.revolute{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 0.5rem;
+}
+
+.revolute li{
+    position: absolute;
+    font-size: 24px;
+}
+
+.revolution-first{
+    top: 0.5rem;
+    left: 5rem;
+    width: 4.5rem;
+    height: 4.5rem;
+}
+.revolution-second{
+    top: 4rem;
+    left: 9rem;
+    width: 5rem;
+    height: 5rem;
+}
+.revolution-third{
+    top: 7rem;
+    left: 5rem;
+    width: 5rem;
+    height: 5rem;
+}
+.revolute li > img{
+    width: 100%;
+    height: 100%;
+}
+
+.revolute li > span{
+    position: absolute;
+    display: block;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    margin-top: -1.25rem;
+    text-align: center;
+    line-height: 1.25rem;
+}
+
+
